@@ -10,4 +10,5 @@ borsh = { version = "1.6", features = ["derive"] }
 sha2 = "0.10"
 thiserror = "2"
 solana-sdk = "3"
+solana-system-interface = "2"
 spl-associated-token-account = "8"

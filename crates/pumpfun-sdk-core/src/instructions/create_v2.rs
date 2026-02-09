@@ -2,8 +2,8 @@ use borsh::BorshSerialize;
 use solana_sdk::{
     instruction::{AccountMeta, Instruction},
     pubkey::Pubkey,
-    system_program,
 };
+use solana_system_interface::program;
 
 use crate::{
     ata,
@@ -109,7 +109,7 @@ pub fn build_create_v2_ix(cfg: &Config, params: CreateV2Params, mint: Pubkey, us
         // 6. User (signer, writable)
         AccountMeta::new(user, true),
         // 7. System program
-        AccountMeta::new_readonly(system_program::id(), false),
+        AccountMeta::new_readonly(program::id(), false),
         // 8. Token program (Token-2022)
         AccountMeta::new_readonly(ids::TOKEN_2022_PROGRAM_ID, false),
         // 9. Associated token program
@@ -137,7 +137,7 @@ pub fn build_create_v2_ix(cfg: &Config, params: CreateV2Params, mint: Pubkey, us
 
     let mut data = Vec::with_capacity(8 + 128);
     data.extend_from_slice(&disc);
-    data.extend_from_slice(&ix_data.try_to_vec()?);
+    data.extend_from_slice(&borsh::to_vec(&ix_data)?);
 
     let ix = Instruction {
         program_id: cfg.pump_program_id,
