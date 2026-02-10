@@ -12,3 +12,5 @@ thiserror = "2"
 solana-sdk = "3"
 solana-system-interface = "2"
 spl-associated-token-account = "8"
+
+pumpfun-sdk-idl = { path = "../pumpfun-sdk-idl" }

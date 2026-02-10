@@ -82,7 +82,7 @@ pub mod create_v2 {{
     pub fn build_ix(program_id: Pubkey, a: Accounts, args: Args) -> Instruction {{
         let mut data = Vec::with_capacity(8 + 128);
         data.extend_from_slice(&DISCRIMINATOR);
-        data.extend_from_slice(&args.try_to_vec().expect("borsh serialize"));
+        data.extend_from_slice(&borsh::to_vec(&args).expect("borsh serialize"));
 
         let accounts = vec![
             AccountMeta::new(a.mint, true),
