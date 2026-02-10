@@ -1,0 +1,12 @@
+[package]
+name = "idl-gen"
+version = "0.1.0"
+description = "Rust-only IDL -> code generator for pumpfun-sdk-idl"
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+anyhow = "1"
+serde_json = "1"
+sha2 = "0.10"
+pumpfun-sdk-idl = { path = "../../crates/pumpfun-sdk-idl" }
