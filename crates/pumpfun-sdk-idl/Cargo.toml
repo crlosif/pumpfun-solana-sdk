@@ -1,0 +1,13 @@
+[package]
+name = "pumpfun-sdk-idl"
+version = "0.1.0"
+description = "Pump.fun IDL snapshot + generated Anchor-style instruction builders (Rust-only)"
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+borsh = { version = "1.6", features = ["derive"] }
+sha2 = "0.10"
+solana-sdk = "3"

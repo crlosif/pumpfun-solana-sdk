@@ -1,6 +1,7 @@
 [workspace]
 members = [
   "crates/pumpfun-sdk-core",
+  "crates/pumpfun-sdk-idl",
 ]
 resolver = "2"
 
