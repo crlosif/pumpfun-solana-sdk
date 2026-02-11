@@ -1,0 +1,14 @@
+[package]
+name = "pumpfun-sdk-client"
+version = "0.1.0"
+description = "Off-chain client helpers for pumpfun-sdk (send/simulate transactions)"
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+pumpfun-sdk-idl = { path = "../pumpfun-sdk-idl" }
+solana-client = "3"
+solana-commitment-config = "3"
+solana-sdk = "3"
+solana-system-interface = "2"
+thiserror = "2"

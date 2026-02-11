@@ -2,7 +2,8 @@
 members = [
   "crates/pumpfun-sdk-core",
   "crates/pumpfun-sdk-idl",
-    "tools/idl-gen",
+  "crates/pumpfun-sdk-client",
+  "tools/idl-gen",
 ]
 resolver = "2"
 
