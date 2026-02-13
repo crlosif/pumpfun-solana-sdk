@@ -1,6 +1,6 @@
 [package]
 name = "pumpfun-sdk-idl"
-version = "0.1.0"
+version = "0.1.1"
 description = "Pump.fun IDL snapshot + generated Anchor-style instruction builders (Rust-only)"
 edition.workspace = true
 license.workspace = true

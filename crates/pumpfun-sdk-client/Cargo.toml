@@ -1,6 +1,6 @@
 [package]
 name = "pumpfun-sdk-client"
-version = "0.1.0"
+version = "0.1.1"
 description = "Off-chain client helpers for pumpfun-sdk (send/simulate transactions)"
 edition.workspace = true
 license.workspace = true

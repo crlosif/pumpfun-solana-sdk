@@ -1,6 +1,6 @@
 [package]
 name = "pumpfun-sdk-core"
-version = "0.1.0"
+version = "0.1.1"
 description = "Pump.fun Rust core SDK: PDAs/ATAs + instruction builders (create_v2)"
 edition.workspace = true
 license.workspace = true
