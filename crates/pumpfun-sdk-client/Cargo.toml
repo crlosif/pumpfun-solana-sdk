@@ -4,10 +4,13 @@ version = "0.1.0"
 description = "Off-chain client helpers for pumpfun-sdk (send/simulate transactions)"
 edition.workspace = true
 license.workspace = true
+repository = "https://github.com/crlosif/pumpfun-solana-sdk"
+keywords = ["solana", "pumpfun", "rpc", "client"]
+categories = ["cryptography::cryptocurrencies"]
 
 [dependencies]
-pumpfun-sdk-core = { path = "../pumpfun-sdk-core" }
-pumpfun-sdk-idl = { path = "../pumpfun-sdk-idl" }
+pumpfun-sdk-core = "0.1"
+pumpfun-sdk-idl = "0.1"
 solana-client = "3"
 solana-commitment-config = "3"
 solana-sdk = "3"
