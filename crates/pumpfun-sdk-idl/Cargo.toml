@@ -4,6 +4,10 @@ version = "0.1.0"
 description = "Pump.fun IDL snapshot + generated Anchor-style instruction builders (Rust-only)"
 edition.workspace = true
 license.workspace = true
+repository = "https://github.com/crlosif/pumpfun-solana-sdk"
+keywords = ["solana", "pumpfun", "anchor", "idl"]
+categories = ["cryptography::cryptocurrencies"]
+
 
 [dependencies]
 serde = { version = "1", features = ["derive"] }
