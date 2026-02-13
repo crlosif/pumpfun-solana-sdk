@@ -6,6 +6,7 @@ edition.workspace = true
 license.workspace = true
 
 [dependencies]
+pumpfun-sdk-core = { path = "../pumpfun-sdk-core" }
 pumpfun-sdk-idl = { path = "../pumpfun-sdk-idl" }
 solana-client = "3"
 solana-commitment-config = "3"

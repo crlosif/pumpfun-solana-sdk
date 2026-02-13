@@ -25,8 +25,18 @@ pub struct Config {
 }
 
 impl Config {
-    /// Safe defaults for Pump `create_v2` (Token-2022).
+    /// Safe defaults for Pump `create_v2` (Token-2022) on mainnet.
     pub fn mainnet_create_v2_defaults() -> Self {
+        Self {
+            pump_program_id: ids::DEFAULT_PUMP_PROGRAM_ID,
+            mayhem_program_id: ids::DEFAULT_MAYHEM_PROGRAM_ID,
+            token_program: TokenProgram::Token2022,
+        }
+    }
+
+    /// Devnet defaults. Pump recommends testing on devnet before mainnet.
+    /// Same program IDs as mainnet (Pump deploys to both clusters).
+    pub fn devnet_create_v2_defaults() -> Self {
         Self {
             pump_program_id: ids::DEFAULT_PUMP_PROGRAM_ID,
             mayhem_program_id: ids::DEFAULT_MAYHEM_PROGRAM_ID,

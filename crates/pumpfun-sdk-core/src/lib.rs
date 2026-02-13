@@ -16,3 +16,7 @@ pub mod instructions;
 
 pub use config::{Config, TokenProgram};
 pub use error::{PumpSdkError, Result};
+pub use instructions::bonding_curve_buy_sell::{
+    build_buy_ix, build_sell_ix, BondingCurveBuyAccounts, BondingCurveSellAccounts,
+};
+pub use instructions::create_v2::{build_create_v2_ix, CreateV2Accounts, CreateV2Params};

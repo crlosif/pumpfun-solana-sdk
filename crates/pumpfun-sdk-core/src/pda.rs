@@ -17,6 +17,11 @@ pub fn pump_global(pump_program_id: &Pubkey) -> (Pubkey, u8) {
     Pubkey::find_program_address(&[b"global"], pump_program_id)
 }
 
+/// Pump PDA: "__event_authority" (Anchor event emitter)
+pub fn pump_event_authority(pump_program_id: &Pubkey) -> (Pubkey, u8) {
+    Pubkey::find_program_address(&[b"__event_authority"], pump_program_id)
+}
+
 /// Mayhem PDA: "global-params"
 pub fn mayhem_global_params(mayhem_program_id: &Pubkey) -> (Pubkey, u8) {
     Pubkey::find_program_address(&[b"global-params"], mayhem_program_id)
