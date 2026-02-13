@@ -4,6 +4,10 @@ version = "0.1.0"
 description = "Pump.fun Rust core SDK: PDAs/ATAs + instruction builders (create_v2)"
 edition.workspace = true
 license.workspace = true
+repository = "https://github.com/crlosif/pumpfun-solana-sdk"
+keywords = ["solana", "pumpfun", "spl", "token-2022"]
+categories = ["cryptography::cryptocurrencies"]
+
 
 [dependencies]
 borsh = { version = "1.6", features = ["derive"] }
@@ -13,4 +17,4 @@ solana-sdk = "3"
 solana-system-interface = "2"
 spl-associated-token-account = "8"
 
-pumpfun-sdk-idl = { path = "../pumpfun-sdk-idl" }
+pumpfun-sdk-idl = "0.1"
