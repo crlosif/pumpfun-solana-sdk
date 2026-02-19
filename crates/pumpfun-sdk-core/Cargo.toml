@@ -1,0 +1,13 @@
+[package]
+name = "pumpfun-sdk-core"
+version = "0.1.0"
+description = "Pump.fun Rust core SDK: PDAs/ATAs + instruction builders (create_v2)"
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+borsh = { version = "1.6", features = ["derive"] }
+sha2 = "0.10"
+thiserror = "2"
+solana-sdk = "3"
+spl-associated-token-account = "8"
